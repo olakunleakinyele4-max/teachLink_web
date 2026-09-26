@@ -9,10 +9,10 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "build:analyze": "ANALYZE=true pnpm run build",
-    "start": "next start",
+    "dev": "node init && next dev --turbopack",
+    "build": "node init && next build",
+    "build:analyze": "node init && ANALYZE=true pnpm run build",
+    "start": "node init && next start",
     "type-check": "tsc --noEmit",
     "type-check:all": "pnpm -r --if-present run type-check",
     "lint": "next lint --max-warnings=0",
